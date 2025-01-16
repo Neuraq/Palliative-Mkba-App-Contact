@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuraq Customer Support</title>
+  <link rel="icon" href="logo-wt.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    .container {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      height: 410px;
+      background: url(bg-neuraq.jpg) no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.438);
+      z-index: 0;
+    }
+    .contact-info, .website-link, .icons {
+      position: relative;
+      z-index: 2;
+    }
+    .contact-info {
+      position: relative;
+      
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .contact-info h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #007BFF;
+      animation: bounceIn 1s ease-in-out;
+    }
+
+    @keyframes bounceIn {
+      0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #fff;
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-info a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .website-link {
+      margin: 20px 0;
+      
+    }
+
+    .website-link a {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+     
+      font-size: 18px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .website-link a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .icons {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+     
+    }
+
+    .icons i {
+      font-size: 30px;
+      color: #007BFF;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icons i:hover {
+      transform: scale(1.2);
+      color: #0056b3;
+    }
+
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-wt.png" alt="Neuraq Logo">
+    <h1>Customer Support</h1>
+  </header>
+
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918089124307">+91 80891 24307</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:support.neuraq@gmail.com">support.neuraq@gmail.com</a></p>
+    </div>
+
+    <div class="website-link">
+      <a href="https://neuraq.in" target="_blank">Visit Our Website</a>
+    </div>
+
+    <div class="icons">
+      <a href="https://wa.me/918089124307" target="_blank">
+        <i class="fas fa-headset"></i>
+      </a>
+      <a href="mailto:support.neuraq@gmail.com">
+        <i class="fas fa-envelope-open-text"></i>
+      </a>
+      <a href="tel:+918157980307">
+        <i class="fas fa-phone-square-alt"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Neuraq. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
